@@ -102,6 +102,7 @@ h1 em { display: block; font-style: italic; color: var(--gold-lt); font-size: .6
 .card-body h3 { font-family: var(--serif-caps); font-weight: 600; font-size: 1.3rem; margin: 0 0 .8rem; color: var(--ink); }
 .card-body p { margin: 0 0 .8rem; font-size: 1.12rem; color: var(--ink-soft); }
 .card-body .btn { margin-top: auto; align-self: flex-start; }
+.card-body p.ai-note { font-size: 1.02rem; font-style: italic; line-height: 1.45; margin-bottom: 1.15rem; }
 .tag { align-self: flex-start; font-family: var(--serif-caps); font-weight: 700; font-size: .74rem !important; letter-spacing: .16em; text-transform: uppercase;
   color: var(--primary) !important; background: color-mix(in srgb, var(--primary) 10%, #fff); padding: .3rem .8rem; border-radius: 999px; margin-bottom: .9rem !important; }
 
@@ -111,6 +112,7 @@ h1 em { display: block; font-style: italic; color: var(--gold-lt); font-size: .6
 .about-icon { width: 170px; flex: none; filter: drop-shadow(0 12px 24px rgba(0,0,0,.2)); }
 .about .section-title { text-align: left; }
 .about p { font-size: 1.22rem; color: var(--ink-soft); }
+.made-title { font-family: var(--serif-caps); font-weight: 600; font-size: 1.02rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); margin: 1.6rem 0 .35rem; }
 .shop-link { margin-top: 1.4rem; }
 
 /* Footer */
