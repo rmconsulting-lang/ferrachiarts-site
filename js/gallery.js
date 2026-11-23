@@ -6,6 +6,8 @@
   var img = document.getElementById("lightbox-img");
   var caption = document.getElementById("lightbox-caption");
   var count = document.getElementById("lightbox-count");
+  var buy = document.getElementById("lightbox-buy");
+  var buyEs = document.getElementById("lightbox-buy-es");
   var closeBtn = dialog.querySelector(".lightbox-close");
   var index = 0;
   var token = 0;
@@ -16,8 +18,18 @@
     var btn = items[index];
     var current = ++token;
     var source = btn.querySelector("img");
-    caption.textContent = btn.getAttribute("data-title") || "";
+    var title = btn.getAttribute("data-title") || "";
+    var listing = btn.getAttribute("data-etsy");
+    caption.textContent = title;
     count.textContent = (index + 1) + " of " + items.length;
+    if (buy && listing) {
+      buy.href = listing;
+      buy.setAttribute("aria-label", "Buy " + title + " on Etsy, $4.99 digital download (opens in a new tab)");
+    }
+    if (buyEs && listing) {
+      buyEs.href = listing;
+      buyEs.setAttribute("aria-label", "Comprar " + title + " en Etsy, descarga digital de $4.99 (se abre en una pestaña nueva)");
+    }
     img.alt = source ? source.alt : caption.textContent;
     img.width = source ? source.width : 768;
     img.height = source ? source.height : 1152;
